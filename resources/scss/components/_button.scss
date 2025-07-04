@@ -1,0 +1,27 @@
+@use "../base/variables";
+
+button {
+    display: inline-block;
+    padding: variables.$padding;
+    color: variables.$dark;
+    background-color: variables.$primary-color;
+    border: none;
+    border-radius: variables.$border-radius-md;
+    transition: variables.$transition-fast;
+
+    &:hover {
+        background-color: variables.$primary-color-400;
+        box-shadow: variables.$shadow-sm;
+    }
+
+    &:active {
+        background-color: variables.$primary-color-300;
+        box-shadow: variables.$shadow-md;
+    }
+
+    &:disabled {
+        background-color: variables.$primary-color-700;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+}

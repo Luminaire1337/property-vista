@@ -37,6 +37,9 @@ $spacer-xl: $spacer * 2; // 32px
 $spacer-2xl: $spacer * 3; // 48px
 $spacer-3xl: $spacer * 4; // 64px
 
+// Default padding
+$padding: $spacer-sm $spacer-md;
+
 // Breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;

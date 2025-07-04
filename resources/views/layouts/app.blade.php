@@ -39,24 +39,33 @@
 </head>
 
 <body>
-    <header>
-        <h1>{{ config('app.name', 'Property Vista') }} - Twój portal nieruchomości</h1>
+    <header class="navbar">
+        <div class="navbar__logo">
+            <img src="{{ asset('img/logo-64.png') }}" alt="{{ config('app.name', 'Property Vista') }} Logo">
+            <span class="navbar__logo-text">{{ config('app.name', 'Property Vista') }}</span>
+        </div>
         <nav>
-            <ul>
-                <li><a href="{{ url('/') }}">Strona główna</a></li>
-                <li><a href="{{ url('/mieszkania') }}">Mieszkania</a></li>
-                <li><a href="{{ url('/domy') }}">Domy</a></li>
-                <li><a href="{{ url('/dzialki') }}">Działki</a></li>
-                <li><a href="{{ url('/kontakt') }}">Kontakt</a></li>
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item"><a href="{{ url('/') }}">Strona główna</a></li>
+                <li class="navbar__menu-item"><a href="{{ url('/listings') }}">Oferty</a></li>
+                <li class="navbar__menu-item navbar_menu-item--important"><a href="{{ url('/create-listing') }}">Dodaj
+                        ofertę</a></li>
+                <li class="navbar__menu-item navbar_menu-item--auth">
+                    @auth
+                        <a href="{{ url('/dashboard') }}">Panel użytkownika</a>
+                    @else
+                        <a href="{{ url('/login') }}">Zaloguj się</a>
+                    @endauth
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         @yield('content')
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; {{ date('Y') }} {{ config('app.name', 'Property Vista') }}. Wszelkie prawa zastrzeżone.</p>
         <p><a href="{{ url('/polityka-prywatnosci') }}">Polityka prywatności</a> | <a
                 href="{{ url('/regulamin') }}">Regulamin</a></p>
