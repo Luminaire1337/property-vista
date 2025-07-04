@@ -2,6 +2,10 @@
 
 @section('title', config('app.name', 'Property Vista') . ' - Znajdź swoje wymarzone mieszkanie')
 
+@section('styles')
+    @vite('resources/scss/pages/welcome.scss')
+@endsection
+
 @section('content')
     <section>
         <h2>Znajdź swoją idealną nieruchomość</h2>
