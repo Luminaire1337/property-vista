@@ -1,0 +1,69 @@
+// Colors
+// https://uicolors.app/generate/5fad00
+$primary-color-50: #f7ffe5;
+$primary-color-100: #ebffc7;
+$primary-color-200: #d7ff95;
+$primary-color-300: #bbfe58;
+$primary-color-400: #9ff526;
+$primary-color-500: #7fdc06;
+$primary-color-600: #5fad00;
+$primary-color-700: #498506;
+$primary-color-800: #3c690b;
+$primary-color-900: #33580f;
+$primary-color-950: #183201;
+$primary-color: $primary-color-600;
+
+$dark: #0e0e11;
+$light: #f4f4f5;
+
+// Typography
+$font-family: "Inter", sans-serif;
+$font-size: 16px;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Spacing
+$spacer: 1rem;
+$spacer-xs: $spacer * 0.25; // 4px
+$spacer-sm: $spacer * 0.5; // 8px
+$spacer-md: $spacer; // 16px
+$spacer-lg: $spacer * 1.5; // 24px
+$spacer-xl: $spacer * 2; // 32px
+$spacer-2xl: $spacer * 3; // 48px
+$spacer-3xl: $spacer * 4; // 64px
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+
+// Box shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+// Z-index
+$z-index-base: 1000;
+$z-index-high: 1020;
+$z-index-very-high: 1050;
+
+// Transitions
+// https://easings.net/#easeInOutQuint
+$easeInOutQuint: cubic-bezier(0.83, 0, 0.17, 1);
+$transition-base: all 0.3s $easeInOutQuint;
+$transition-fast: all 0.15s $easeInOutQuint;
+$transition-slow: all 0.5s $easeInOutQuint;
