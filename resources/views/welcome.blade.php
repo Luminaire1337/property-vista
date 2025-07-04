@@ -1,26 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('title', config('app.name', 'Property Vista') . ' - Znajdź swoje wymarzone mieszkanie')
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+@section('content')
+    <section>
+        <h2>Znajdź swoją idealną nieruchomość</h2>
+        <p>Property Vista to nowoczesny portal nieruchomości, który pomaga znaleźć wymarzone mieszkanie, dom lub
+            działkę.</p>
+    </section>
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Vite -->
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
-</head>
-
-<body>
-    <h1>Testing</h1>
-    <a href="#testing-link">Testing Link</a>
-</body>
-
-</html>
+    <section>
+        <h2>Najnowsze oferty</h2>
+    </section>
+@endsection
